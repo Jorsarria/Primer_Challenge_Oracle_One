@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">CODIGO SECRETO</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form id="formulario">
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <input class="text-input" type="text" name="input-texto"onkeyup="this.value" id="input-texto" placeholder="Ingrese el texto aqui">
+        <input class="btn" type="button" value="¡Encriptar!" onclick="encriptacion()" id="btn-encriptar">
+        <input class="btn" type="button" value="¡Desencriptar!" onclick="desencriptacion()" id="btn-desencriptar">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 id="">Mensaje encriptado:</h2>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn" type="button" onclick= "copiado()"value="Copiar" id="btn-copy">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+<footer>
+    Derechos Reservados &copy; 2022 <br>
+    Diseñado por: Jordan Sarria <br>
+    jordansarria-1993@hotmail.com
+</footer>
+</body>
+</html>
